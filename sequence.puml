@@ -1,0 +1,10 @@
+@startuml
+participant "Google Sheets" as GS
+participant "Google Apps Script" as GAS
+participant "Google Calendar" as GC
+
+GS -> GAS: Trigger script
+GAS -> GC: Create event
+GC -> GAS: Event created
+GAS -> GS: Event registered
+@enduml
